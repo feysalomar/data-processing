@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
  <head>
-     <title>Project Name</title>
+     <title>Data processing</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
   <link rel="stylesheet" href="css/main.css">
@@ -10,7 +10,7 @@
  </head>
  <body>
      <header>
-     <h1 class="page-header">Site-Name</h1>
+     <h1 class="page-header">Data processing</h1>
         <nav class="topnav" id="myTopnav">
             <a href="index.html" class="active">Home</a>
             <a href="#">Link</a>
@@ -22,24 +22,31 @@
 
    <main class="wrapper">
     <p>This HTML template adds form elements and styles to create a form template.</p>
-       <h2 class="subheader">Place for code 
-        below:</h2>
+       <h2 class="subheader">Shipping Info:</h2>
       <form method="get" action="" class="main-form">
         <div>
           <label for="FirstName">First Name</label><br>
-          <input type="text" name="FirstName" id="FirstName" placeholder="First Name" required autofocus>
+          <input type="text" name="First_Name" id="FirstName" placeholder="First Name" required autofocus>
         </div>
         <div>
           <label for="LastName">Last Name</label><br>
-          <input type="text" name="LastName" id="LastName" placeholder="Last Name" required>
+          <input type="text" name="Last_Name" id="LastName" placeholder="Last Name" required>
         </div>
         <div>
           <label for="Email">Email</label><br>
           <input type="Email" name="Email" id="Email" placeholder="Email" required>
         </div>
         <div>
+          <label for="Phone">Phone</label><br>
+          <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="xxx-xxx-xxxx" required>
+        </div>
+        <div>
           <label for="Address">Address</label><br>
           <input type="text" name="Address" id="Address" placeholder="Address" required>
+        </div>
+        <div>
+          <label for="City">City</label><br>
+          <input type="text" name="City" id="City" placeholder="City" required>
         </div>
         <div>
           <label for="State">State</label><br>
@@ -52,25 +59,13 @@
         </select>
         </div>
         <div>
-          <fieldset>
-            <legend>Would you like to join our mailing list?</legend>
-            <label><input type="radio" name="JoinMailingList" value="Yes">Yes</label><br>
-            <label><input type="radio" name="JoinMailingList" value="No">No</label>
-          </fieldset>
+          <label for="PostalCode">Postal Code</label><br>
+          <input type="text" name="Postal_Code" id="PostalCode" placeholder="Postal Code" required>
         </div>
+    
         <div>
-          <fieldset>
-            <legend>Interested In?</legend>
-            <label><input type="checkbox" name="InterestedIn" value="Website">Website</label><br>
-            <label><input type="checkbox" name="InterestedIn" value="OnlineCalender">Online Calender</label><br>
-            <label><input type="checkbox" name="InterestedIn" value="ContactForm">Contact Form</label><br>
-            <label><input type="checkbox" name="InterestedIn" value="Lollipops">Complimentary Lollipops</label><br>
-
-          </fieldset>
-        </div>
-        <div>
-          <label for="Comments">Comments</label><br>
-          <textarea name="Comments" id="Comments" cols="36" rows="4"></textarea>
+          <label for="Notes">Notes</label><br>
+          <textarea name="Notes" id="Notes" cols="36" rows="4"></textarea>
         </div>
         <div>
           <input type="submit" value="Submit it!">
