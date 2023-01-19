@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/nav.css">
   <link rel="stylesheet" href="css/main-form.css">
+  <link rel="stylesheet" href="css/data-processing.css">
  </head>
  <body>
      <header>
@@ -19,11 +20,39 @@
             <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
         </nav>
      </header>
-
    <main class="wrapper">
-    <p>This HTML template adds form elements and styles to create a form template.</p>
-       <h2 class="subheader">Shipping Info:</h2>
+    <div id="output">
       <form method="get" action="" class="main-form">
+        <h3>This page demonstrates data processing of query string data using client side JavaScript.
+           Upon submission, the cart items are totaled and title case is applied to the Shipping Info.</h3>
+    <h2 class="subheader">Cart</h2>
+    <div id="widgets">
+      <div>
+          <b>Widget</b><br />
+          <p>Our Widgets are spring loaded and need no batteries!</p>
+          <p>At $3.99 they're a bargain!</p>
+          <p><label><input type="checkbox" name="Cart" value="Widget" /> Add to Cart</label></p>
+          <div class="pic"><img src="images/widget.png" /></div>
+      </div>
+      <div>
+          <b>Sprocket</b><br />
+          <p>Our Sprockets are well made and hold up to extreme pressure!</p>
+          <p>They only cost $5.99!</p>
+          <p><label><input type="checkbox" name="Cart" value="Sprocket" /> Add to Cart</label></p>
+          <div class="pic"><img src="images/sprocket.png" /></div>
+      </div>
+      <div>
+          <b>Thingy</b><br />
+          <p>Our Thingys have many uses, and people come up with new ones all the time!</p>
+          <p>Such a deal at $1.99!</p>
+          <p><label><input type="checkbox" name="Cart" value="Thingy" /> Add to Cart</label></p>
+          <div class="pic"><img src="images/thingy.png" /></div>
+      </div>
+  </div>
+
+       <h2 class="subheader">Shipping Info:</h2>
+       
+      
         <div>
           <label for="FirstName">First Name</label><br>
           <input type="text" name="First_Name" id="FirstName" placeholder="First Name" required autofocus>
@@ -71,6 +100,7 @@
           <input type="submit" value="Submit it!">
         </div>
       </form> 
+    </div>
 
       
       
@@ -86,6 +116,7 @@
      
   <!-- Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon -->
     <script src="js/main.js"></script>
+    <script src="js/data-processing.js"></script>
      
  </body>
 </html>
