@@ -1,4 +1,10 @@
-
+function titleCase(str) {
+    str = str.toLowerCase().split(' ');
+    for (var i = 0; i < str.length; i++) {
+      str[i] = str[i].charAt(0).toUpperCase() + str[i].slice(1); 
+    }
+    return str.join(' ');
+}
 const queryString = window.location.search;
 console.log(queryString);
 
@@ -48,6 +54,10 @@ console.log(queryString);
 
        }else{//shipping label
         key = key.split("_").join(" ");
+
+        if(key == "First Name" || key == "Last Name" || key == "City"){
+            value = titleCase(value);
+        }
 
         myData += `<p>${key}: ${value}</p>`;
        }
